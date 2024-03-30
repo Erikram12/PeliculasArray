@@ -12,7 +12,7 @@ var listaPeliculas = [
   ];
   //Desafio 2, elementos a la lista usando .push
   
-  listaPeliculas.push("https://cdn-icons-png.flaticon.com/512/919/919828.png");
+  listaPeliculas.push("");
   
   var nombrePeliculas = [
     "El Corcel Indomable",
