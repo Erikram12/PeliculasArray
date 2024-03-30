@@ -10,10 +10,7 @@ var listaPeliculas = [
     "https://es.web.img2.acsta.net/pictures/14/06/23/11/40/441402.jpg",
     "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1wpyflz4T5Egto5hY9wXjLo4Fsm.jpg"
   ];
-  //Desafio 2, elementos a la lista usando .push
-  
-  listaPeliculas.push("");
-  
+
   var nombrePeliculas = [
     "El Corcel Indomable",
     "Misión Imposible 1",
@@ -26,8 +23,17 @@ var listaPeliculas = [
     "Transformers",
     "Inuyasha"
   ];
+  //Desafio 2, elementos a la lista usando .push
   
+  listaPeliculas.push();
+    
   for (var i = 0; i < listaPeliculas.length; i++) {
-    document.write("<img src =" + listaPeliculas[i] + ">");
+    if (!listaPeliculas[i].endsWith(".jpg")) {
+        alert("❌Imagen no válida en el índice " + i + ".\n¡Solo imagenes .jpg son validas!");
+    }
+    document.write("<div>");
+    document.write("<img src=" + listaPeliculas[i] + ">");
+    document.write("<p style='color: white;'>" + nombrePeliculas[i] + "<p/>");
+    document.write("</div>");
   }
   
